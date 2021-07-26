@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshdesk</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+ 
+    <!--header starts -->
+    <div class="header">
+        <div class="header_left">
+            <img src="Freshdesk.png" alt="">
+        
+        <div class="header_input">
+            <span class="material-icons">search</span>
+            <input  type="text" placeholder="Search Contacts">
+        </div>
+    </div>
+            <div class="header_middle">
+                <div class="header_options">
+                    <span class="material-icons">home</span>
+                </div>
+                <div class="header_options">
+                    <span class="material-icons">notifications_active</span>
+                </div>
+            </div>
+                <div class="header_right">
+
+                </div>
+    </div>
+    <!--header ends -->
+    <hr>
+    <!--Main body start -->
+    <div class="main_body">
+       
+         <!--Sidebar start -->
+         <div class="sidebar">
+             <div class="sidebarRow">
+                <span class="material-icons">contacts</span>
+                <button onclick="myFunction()"><h4>contacts</h4></button>
+                <table class="table" table-striped>
+                    <thead class="thead-dark" >
+                        <tr>
+                           <th># &nbsp;</th>
+                            <th>email &nbsp;</th>  
+                            <th>name&nbsp;</th> 
+                            <th>mobile number &nbsp;</th>  
+                            <th><button type="submit" id="edit-button">Edit</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="result1"> </tbody>
+                </table>
+            </div>
+             <div class="sidebarRow">
+                <span class="material-icons">local_activity</span>
+                <button onclick="call()"><h4>Tickets</h4></button>
+         <table class="table" table-striped>
+                    <thead class="thead-dark" >
+                        <tr>
+                           <th># &nbsp;</th>
+                            <th>status &nbsp;</th>  
+                            <th>priority&nbsp;</th> 
+                            <th>requester_id &nbsp;</th>  
+                            <th><button type="submit" id="edit-button">Edit</button>
+                            <p class="id"></p>   
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="result"> </tbody>
+        </table>
+             </div>
+         </div>
+    </div>
+
+    <!--Main boday ends -->
+</body>
+</html>
